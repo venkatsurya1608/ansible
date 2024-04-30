@@ -1,0 +1,8 @@
+- name: variables from inventory
+  hosts:
+  tasks:
+  - name: print information
+    vars:
+      timings: "8.00 AM"
+    ansible.builtin.debug:
+        msg: "hi username: {{username}} password is: {{password}} and timings are: {{timings}}"

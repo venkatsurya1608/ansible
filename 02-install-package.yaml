@@ -1,0 +1,13 @@
+- name: install nginx
+  hosts:
+  become: yes    #root user -b
+  tasks:
+    - name: install nginx
+      ansible.builtin.dnf:
+        name: nginx
+        state: lastest #new version
+    - name: start nginx
+      ansible.bulitin.service: #service means starting
+        name: nginx
+        state: started
+        enabled: yes
