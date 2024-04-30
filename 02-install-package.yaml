@@ -1,5 +1,5 @@
 - name: install nginx
-  hosts:
+  hosts: web
   become: yes    #root user -b
   tasks:
     - name: install nginx
