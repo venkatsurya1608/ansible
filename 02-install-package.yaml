@@ -5,7 +5,7 @@
     - name: install nginx
       ansible.builtin.dnf:
         name: nginx
-        state: install #new version
+        state: latest #new version
     - name: start nginx
       ansible.builtin.service: #service means starting
         name: nginx
