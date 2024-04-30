@@ -7,7 +7,7 @@
         name: nginx
         state: lastest #new version
     - name: start nginx
-      ansible.bulitin.service: #service means starting
+      ansible.builtin.service: #service means starting
         name: nginx
         state: started
         enabled: yes
