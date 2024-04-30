@@ -3,7 +3,7 @@
   vars: 
     course: "AWS"
     trainer: "venkat"
-    duration: "20hrs"
+    duration: "20hours"
   tasks:
   - name: print override information
     vars:
