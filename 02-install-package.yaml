@@ -1,13 +1,13 @@
-- name: install nginx
+- name: install fail2ban
   hosts: web
   become: yes    #root user -b
   tasks:
-    - name: install nginx
+    - name: install fail2ban
       ansible.builtin.dnf:
-        name: nginx
+        name: fail2ban
         state: latest #new version
-    - name: start nginx
+    - name: start fail2ban
       ansible.builtin.service: #service means starting
-        name: nginx
+        name: fail2ban
         state: started
         enabled: yes
