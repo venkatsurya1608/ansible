@@ -1,11 +1,12 @@
 - name: demo on loops
   hosts: localhost
   tasks:
-  -name: print names
-   ansible.builtin.debug:
-    msg: "hello {{items}}"
-   loop:
-   - AWS
-   - shell scripting
-   - terraform
-   - ansible
+  - name: print names
+    ansible.builtin.debug:
+      msg: "hello {{items}}"
+    loop:
+    - AWS
+    - terraform
+    - ansible
+    - devops
+ 
