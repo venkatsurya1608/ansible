@@ -3,10 +3,10 @@
   tasks:
   - name: print names
     ansible.builtin.debug:
-      msg: "hello {{item}}"
-    loop:
+      msg: "hello {{item}}"  #item ani unte one by one velthundi
+    loop:        #loop ante one by one print avthundi like aws ansible terraform
     - AWS
     - terraform
-    - ansible        #confuse what is items 
+    - ansible        
     - devops
  
