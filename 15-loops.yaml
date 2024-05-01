@@ -3,7 +3,7 @@
   tasks:
   - name: print names
     ansible.builtin.debug:
-      msg: "hello {{item}}"
+      msg: "hello {{item}} "
     loop:
     - AWS
     - terraform
