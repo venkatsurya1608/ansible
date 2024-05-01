@@ -1,7 +1,7 @@
 - name: data types
   hosts: localhost
   vars:
-    course: Devops with AWS
+    course: Devops with AWS and cloud
     tools: 
     - linux
     - shell
