@@ -1,6 +1,6 @@
 - name: variable preference
   hosts: localhost
-  tasks:
+    vars:
     inventation: "today my birthday variable"
   vars_files:
   - vars.yaml
@@ -8,10 +8,9 @@
      - name: inventation
       prompt: "please enter wishes"
       private: false
-    tasks:
-    - name: check preference
+  tasks:
+  - name: check preference
       vars:
         inventation: "today my birthday task variable"
-      ansible.builtin.bebug:
-        msg: "hello , {{inventation}}"
-          
+    ansible.builtin.bebug:
+      msg: "hello , {{inventation}}"
