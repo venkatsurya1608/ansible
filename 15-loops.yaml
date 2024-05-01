@@ -3,10 +3,10 @@
   tasks:
   - name: print names
     ansible.builtin.debug:
-      msg: "hello {{items}}"
+      msg: "hello {{item}}"
     loop:
     - AWS
     - terraform
-    - ansible
+    - ansible        #confuse what is items 
     - devops
  
