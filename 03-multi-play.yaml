@@ -12,3 +12,5 @@
     ansible.builtin.debug:
       msg: "hello everyone im playing game-1 and play-1"
              
+
+# ansible-playbook -i inventory.ini -e ansible_user=(user name) ansible_password=(password) filename.yaml           
